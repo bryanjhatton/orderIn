@@ -1168,9 +1168,8 @@ input[type="color"]:focus,
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  *margin-top: 0;
+  margin-top: 1px;
+  margin-bottom: 3px;
   line-height: normal;
 }
 
@@ -1410,6 +1409,10 @@ input.span1,
 textarea.span1,
 .uneditable-input.span1 {
   width: 46px;
+}
+
+input.num {
+  width: 30px;
 }
 
 .controls-row {
