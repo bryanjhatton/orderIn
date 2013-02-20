@@ -1,0 +1,90 @@
+@(message: String)
+
+@main("Welcome to OrderIn") {
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">OrderIn</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+    
+}{
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <h1>Hello, Food Dudes!</h1>
+                <p>This is site where you can view and manage the meal schedule by leveraging data from your caterers.</p>
+                <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+
+            <form>
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name"> </td>
+                    </tr>
+                    <tr>
+                        <td>Food Type</td>
+                        <td><input type="text" name="foodType"> </td>
+                    </tr>
+                    <tr>
+                        <td>Image URL</td>
+                        <td><input type="text" name="imgUrl"> </td>
+                    </tr>
+                    <tr>
+                        <td>Main Contact</td>
+                        <td><input type="text" name="contact"> </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="email"> </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="text" name="phone"> </td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" name="address"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td align="right">
+                            <a class="btn" href="#">Submit</a>
+                            <input type="reset" class="btn">
+                        </td>
+                    </tr>
+                </table> 
+            </form>
+}
