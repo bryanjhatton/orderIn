@@ -82,12 +82,14 @@ body {
                 <h4 style="display: inline-block">Style of Cuisine: </h4> 
                     &nbsp;<input type="text" placeholder="Asian, American, etc." style="display: inline-block">
                     &nbsp;&nbsp;<h4 style="display: inline-block">Number of Dishes: </h4>
-                    &nbsp;<input class="num" type="number" min="1" width:10px>
+                    &nbsp;<input class="num" type="number" min="0" max="50" width:10px 
+				onchange="changeRowCount()"
+				id="numInput">
                 <hr> 
 
             </div>
             
-            <table width="590px" valign="top" cellpadding="10px" rules="rows">
+            <table width="590px" valign="top" cellpadding="10px" rules="rows" id="menuTable">
                 <tr bgcolor="#D4D5D6">
                     <td><h4>Dishes</h4></td>
                     <td><h4>Type</h4></td>
@@ -140,6 +142,7 @@ body {
 
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+	<script src="../js/caterer.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
